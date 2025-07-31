@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 29, 29);
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(46, 34, 34);
+}
+
+
+.slides {
+    width: 690px;
+    height: 490px;
+    margin: 10px;
+}
+
+img {
+    position: absolute;
+    width: 690px;
+    height: 490px;
+    visibility: hidden;
+}
+
+button {
+    height: 400px;
+    width: 20px;
+    font-weight: 900;
+}
+
+.slideshow {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: azure;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+div[status=active] {
+    background-color: rgb(150, 158, 158);
+}

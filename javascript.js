@@ -21,11 +21,12 @@ buttons.forEach(button => {
 
 // Updates the navigation circles by updating current circle
 function updateCurrentDot(newSlide) {
+  const slides =  newSlide.closest("[data-carousel]").querySelector("[data-slides]");
   const dots = newSlide.closest("[data-carousel]").querySelector("[data-dots]");
   const activeDot = dots.querySelector("[data-active]");
 
-  newDot = dots.querySelector("#" + newSlide.firstElementChild.className);
-  newDot.dataset.active = true;
+  let newIndex = [...slides.children].indexOf(newSlide)
+  dots.children[newIndex].dataset.active = true
   delete activeDot.dataset.active;
 }
 
